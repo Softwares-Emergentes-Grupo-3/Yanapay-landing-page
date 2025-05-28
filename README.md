@@ -1,1 +1,1 @@
-# Yanapay-landing-page
+# Yanapay Landing Page
