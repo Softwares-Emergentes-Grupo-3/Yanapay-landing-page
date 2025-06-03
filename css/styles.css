@@ -12,6 +12,10 @@
   --color-black: #000;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 body {
   font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -636,5 +640,219 @@ header {
         max-width: 200px;
       }
     }
+  }
+}
+
+/* !Contact form */
+.contact {
+  margin: 4rem 0;
+  .content {
+    text-align: center;
+    padding: 0 2rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: var(--secondary-color);
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+
+      input,
+      textarea {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+
+        &:focus {
+          border-color: var(--primary-color);
+          outline: none;
+        }
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: var(--color-white);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    .content {
+      padding: 0 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .contact-form {
+      form {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+/* !FOOTER */
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #000;
+  color: white;
+  padding: 2rem 0 2.5rem 0;
+  margin-top: 3rem;
+
+  gap: 2rem 0;
+}
+
+footer .wrapper-footer {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+
+  align-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+footer p:nth-child(1) {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+.footer-component {
+  width: 18.75rem;
+}
+
+.agroNova {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.agroNova img {
+  display: block;
+  width: 3rem;
+}
+
+.enterprise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1.25rem;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.25rem;
+}
+
+.social-media div {
+  display: flex;
+  gap: 1rem;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 2rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-component {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-top: 3.125rem;
+    gap: 1rem;
+  }
+
+  footer .wrapper-footer {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  footer p:nth-child(1) {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  footer .social-media {
+    align-items: center;
+  }
+
+  .footer-component {
+    width: 11rem;
+  }
+
+  .enterprise {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  footer .wrapper-footer {
+    justify-content: space-around;
+  }
+
+  .enterprise {
+    align-items: center;
   }
 }

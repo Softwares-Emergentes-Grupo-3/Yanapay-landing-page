@@ -12,7 +12,8 @@
       <nav>
         <ul>
           <li><a href="#hero">Inicio</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="#characteristics">Servicios</a></li>
+          <li><a href="#plans">Planes</a></li>
           <li><a href="#team">Equipo</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -147,7 +148,7 @@
         </div>
       </section>
 
-      <section class="plans">
+      <section class="plans" id="plans">
         <div class="content">
           <h2>Planes de suscripción</h2>
           <p>
@@ -217,7 +218,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team" id="team">
         <div class="content">
           <h2>Conoce a nuestro equipo</h2>
           <p>
@@ -274,7 +275,73 @@
           </div>
         </div>
       </section>
+
+      <section class="contact" id="contact">
+        <div class="content">
+          <h2>Contáctanos</h2>
+          <p>
+            Estamos aquí para ayudarte. Si tienes preguntas sobre nuestros
+            servicios o necesitas una demostración, no dudes en escribirnos.
+          </p>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xjvowzqk" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="_replyto" required />
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="wrapper-footer">
+        <div class="enterprise footer-component">
+          <p>AgroNova</p>
+          <p>Quienes somos?</p>
+          <p>Términos y Condiciones</p>
+        </div>
+        <div class="agroNova footer-component">
+          <img src="./assets/agro-nova.svg" alt="AgroNova" />
+          <p>“Anticipa, Protege, Cultiva”</p>
+        </div>
+        <div class="social-media footer-component">
+          <p>Síguenos</p>
+          <div>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopenner noreferrer"
+            >
+              <img src="./assets/logo-facebook.svg" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopenner noreferrer"
+            >
+              <img src="./assets/logo-instagram.svg" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://twitter.com/home"
+              target="_blank"
+              rel="noopenner noreferrer"
+            >
+              <img src="./assets/logo-twitter.svg" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p id="copyRight">© 2025 AgroNova. Todos los derechos reservados.</p>
+    </footer>
     <script src="./js/index.js"></script>
   </body>
 </html>
